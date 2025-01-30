@@ -15,10 +15,15 @@
 <header>
     <div class="logo"><h1>FAUJI</h1><h2>STEEL FURNITURE</h2></div>
 
-    <div class="searchbar">
-        <input type="search" name="search" id="search" placeholder="find your product">
-        <button id="icon"><img src="search.png" alt="" height="70%"></button>
-    </div>
+   <section class="search-filter">
+    <input type="text" id="search-bar" placeholder="Search products..." onkeyup="filterProducts()">
+    <select id="category-filter" onchange="filterProducts()">
+        <option value="">All Categories</option>
+        <option value="electronics">Electronics</option>
+        <option value="clothing">Clothing</option>
+        <option value="home">Home</option>
+    </select>
+</section>
 
     <div id="menuopen">
         <i class="ri-menu-3-line"></i>
